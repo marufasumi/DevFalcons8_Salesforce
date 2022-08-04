@@ -10,11 +10,12 @@ trigger Salesforce_projectTrigger on Salesforce_Project__c (before insert , afte
 
     if ( trigger.isUpdate){
         for (Salesforce_Project__c eachRecord : newList) {
-            system.debug('list of updated records records is ' + eachRecord);
+            system.debug('list of updated records  is ' + eachRecord);
             
         }
 
     }
-}
 
-    
+
+
+}
